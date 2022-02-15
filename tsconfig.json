@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "ES2021",
+        "lib": [
+            "DOM",
+            "ES2021"
+        ],
+        "module": "ES2015"
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}

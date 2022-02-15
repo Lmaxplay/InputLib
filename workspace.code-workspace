@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"typescript.tsdk": "node_modules\\typescript\\lib",
+		"files.exclude": {
+			"**/*.js": {"when": "$(basename).ts"},
+			"**/*.js.map": true
+		}
+	},
+	"tasks":{
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"type": "typescript",
+				"tsconfig": "tsconfig.json",
+				"problemMatcher": [
+					"$tsc"
+				],
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				}
+			}
+		]
+	}
+}
